@@ -39,10 +39,11 @@ class PirateserviceApplicationTests {
 		raidsRepository.save(raids);
 
 		jack.addRaidToPirate(raids);
-//		pirateRepository.save(jack);
 
 		raids.addPirateToRaid(jack);
-//		raidsRepository.save(raids);
+
+		pirateRepository.save(jack);
+		raidsRepository.save(raids);
 	}
 
 }
